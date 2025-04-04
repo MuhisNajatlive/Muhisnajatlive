@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuhisnajatLive - The Ultimate Fan Hub</title>
-    <meta name="description" content="Dive into the world of MuhisnajatLive! Get exclusive content, fun challenges, behind-the-scenes action, and much more.">
+    <title>MuhisnajatLive - Official Hub</title>
+    <meta name="description" content="Join the MuhisnajatLive community! Exclusive content, behind-the-scenes fun, and the best entertainment.">
     <meta property="og:image" content="your-photo.jpg">
-    <meta property="og:title" content="MuhisnajatLive - The Movement Begins Here!">
-    <meta property="og:description" content="Join the journey. Experience the hype. Be part of the MuhisnajatLive community!">
+    <meta property="og:title" content="MuhisnajatLive - Join the Hype!">
+    <meta property="og:description" content="Be part of something amazing. Join the MuhisnajatLive community!">
 
     <style>
         * {
@@ -16,7 +15,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
-            transition: 0.3s ease-in-out;
+            transition: 0.3s;
         }
         html {
             scroll-behavior: smooth;
@@ -25,6 +24,7 @@
             background: #1a1a2e;
             color: #fff;
             text-align: center;
+            transition: background 0.5s, color 0.5s;
         }
         body.dark-mode {
             background: #000;
@@ -35,10 +35,14 @@
         header {
             background: linear-gradient(45deg, #ff3e00, #ff8c00, #ff3e00);
             padding: 60px 20px;
-            font-size: 2em;
-            font-weight: bold;
+            font-size: 1.8em;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 1s ease-in-out;
+        }
+
+        header img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
         }
 
         /* Navigation */
@@ -58,7 +62,6 @@
             text-transform: uppercase;
             font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
         }
         nav a:hover {
             background: #ff8c00;
@@ -70,7 +73,7 @@
         .section {
             display: none;
             padding: 50px 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             animation: fadeIn 0.8s ease-in-out;
         }
@@ -88,14 +91,13 @@
             font-weight: bold;
             border-radius: 8px;
             box-shadow: 0px 5px 15px rgba(255, 140, 0, 0.6);
-            transition: 0.3s;
         }
         .cta-btn:hover {
             background: #e07b00;
             transform: scale(1.1);
         }
 
-        /* Social Media */
+        /* Social Media Links */
         .social-links a {
             color: #ff8c00;
             font-size: 1.5em;
@@ -133,14 +135,14 @@
 
     <!-- Header -->
     <header>
-        <h1>🚀 Welcome to MuhisnajatLive! 🎉</h1>
-        <p>The **ultimate** place for fun, entertainment, and exclusive behind-the-scenes content!</p>
+        <img src="your-photo.jpg" alt="MuhisnajatLive Profile" />
+        <h1>🚀 Welcome to the MuhisnajatLive Community! 🎉</h1>
+        <p>Join the movement and be part of something legendary.</p>
     </header>
 
     <!-- Navigation -->
     <nav>
         <a onclick="showSection('home')">Home</a>
-        <a onclick="showSection('about')">Who is Muhisnajat?</a>
         <a onclick="showSection('spotlight')">Community Spotlight</a>
         <a onclick="showSection('updates')">Live Updates</a>
         <a onclick="showSection('social')">Social Media</a>
@@ -149,56 +151,55 @@
 
     <!-- Home Section -->
     <section id="home" class="section active">
-        <h2>🔥 What is MuhisnajatLive?</h2>
-        <p>📢 The fastest-growing entertainment platform where **every moment is unforgettable**!</p>
-        <p>🎥 **Behind-the-scenes access** to the most epic content.</p>
-        <p>💬 **Join a community** of thousands who love great content and interactive fun.</p>
+        <h2>🔥 Why Join MuhisnajatLive?</h2>
+        <p>🎥 Behind-the-scenes content <br> 🎁 Giveaways & surprises <br> ❤️ Community engagement</p>
         <br>
-        <a href="https://www.tiktok.com/@muhisnajatlive" class="cta-btn" target="_blank">Follow Now on TikTok</a>
-    </section>
-
-    <!-- About Muhisnajat -->
-    <section id="about" class="section">
-        <h2>🌟 Who is Muhisnajat?</h2>
-        <p>🎤 **Meet Muhisnajat** – The **creator, entertainer, and innovator** behind the viral sensation.</p>
-        <p>🔥 He’s known for **engaging content, hilarious moments, and community-driven experiences**.</p>
-        <p>🌍 **Millions of views** and a growing audience make him **one of the most exciting creators today!**</p>
+        <a href="https://www.tiktok.com/@muhisnajatlive" class="cta-btn" target="_blank">Follow on TikTok</a>
         <br>
-        <a href="https://www.instagram.com/muhisnajat1/" class="cta-btn" target="_blank">See More on Instagram</a>
+        <img src="home-photo.jpg" alt="MuhisnajatLive Home" />
     </section>
 
     <!-- Community Spotlight -->
     <section id="spotlight" class="section">
-        <h2>🎉 Community Spotlight</h2>
-        <p>🏆 The **best fans in the world** deserve the best shoutouts!</p>
-        <p>✨ **Featured Fan of the Week** - Want to be highlighted? Join the fun now!</p>
-        <br>
-        <a href="https://www.tiktok.com/@muhisnajatlive" class="cta-btn" target="_blank">Be Part of It!</a>
+        <h2>🌟 Community Spotlight!</h2>
+        <div class="spotlight">
+            <p>🎉 Featured Event: <strong>The Ultimate Fan Giveaway</strong>!</p>
+            <p>✅ Join the exclusive fan club and win free merch!</p>
+            <br>
+            <a href="https://www.tiktok.com/@muhisnajatlive" class="cta-btn" target="_blank">Enter Now</a>
+        </div>
+        <img src="spotlight-photo.jpg" alt="Spotlight Event" />
     </section>
 
     <!-- Live Updates -->
     <section id="updates" class="section">
         <h2>📢 Live Updates</h2>
-        <p>🚀 **New content drops every week** – Stay ahead!</p>
-        <p>📅 **Live Q&A Sessions** – Every Friday at 8 PM EST.</p>
-        <p>🎯 **Upcoming Challenges** – Be part of the action!</p>
+        <div class="updates">
+            <p>🚀 **New Merch Drop:** Limited edition hoodies coming soon! 👕🔥</p>
+            <p>🔥 **Latest Challenge:** Join the #MuhisChallenge on TikTok now!</p>
+            <p>🎥 **Instagram Update:** Check out the latest post <a href="https://www.instagram.com/muhisnajat1/" target="_blank">here</a>!</p>
+            <p>📅 **Live Q&A:** Next TikTok live session happening **Friday at 8 PM EST**. Don’t miss out!</p>
+        </div>
+        <img src="updates-photo.jpg" alt="Live Updates" />
     </section>
 
     <!-- Social Media Links -->
     <section id="social" class="section">
-        <h2>📲 Follow MuhisnajatLive Everywhere!</h2>
-        <p>Stay updated, interact, and be part of the journey.</p>
+        <h2>📲 Follow MuhisnajatLive!</h2>
         <div class="social-links">
             <a href="https://www.tiktok.com/@muhisnajatlive" target="_blank">🎵 TikTok</a>
             <a href="https://www.instagram.com/muhisnajat1/" target="_blank">📸 Instagram</a>
             <a href="https://www.youtube.com/@muhisnajat" target="_blank">▶️ YouTube</a>
         </div>
+        <img src="social-media-photo.jpg" alt="Social Media" />
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 MuhisnajatLive | All rights reserved</p>
     </footer>
 
+    <!-- JavaScript -->
     <script>
         function showSection(sectionId) {
             document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
@@ -211,4 +212,3 @@
     </script>
 
 </body>
-</html>
